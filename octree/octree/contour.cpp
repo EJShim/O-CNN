@@ -111,7 +111,7 @@ bool Contour::check_subdividion(const uintk node_key, const int depth) {
   if (cube_case != 0 && cube_case != 255 && weight_case == 255) return true;
 
   // check 6 faces
-  const int coord[6][3] = {
+  const uintk coord[6][3] = {
       {xyz[0], xyz[1], xyz[2]}, {xyz[0] + scale, xyz[1], xyz[2]},
       {xyz[0], xyz[1], xyz[2]}, {xyz[0], xyz[1] + scale, xyz[2]},
       {xyz[0], xyz[1], xyz[2]}, {xyz[0], xyz[1], xyz[2] + scale}};
